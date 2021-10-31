@@ -634,6 +634,13 @@
     "jsonc-parser" "3.0.0"
     "pluralize" "8.0.0"
 
+"@nestjs/sequelize@^8.0.0":
+  "integrity" "sha512-+hCs/uO1b+Vjt9EmKc31Srr5j9k8MI6eDg+NtSkym/u18hC8eW2RjcxxK+62yn5maxMLyp5fTtAEg3YmicYL4Q=="
+  "resolved" "https://registry.npmjs.org/@nestjs/sequelize/-/sequelize-8.0.0.tgz"
+  "version" "8.0.0"
+  dependencies:
+    "uuid" "8.3.2"
+
 "@nestjs/testing@^8.0.0":
   "integrity" "sha512-Iffx79y4Bt3gAJd8n+9Nhbmq9uB0KWZ0KasdQwQsbCNuhTsvgjQ1iD/khFYtf1dGthSndmrAQgvl+jkX7W7KKA=="
   "resolved" "https://registry.npmjs.org/@nestjs/testing/-/testing-8.1.2.tgz"
@@ -4522,14 +4529,14 @@
   "resolved" "https://registry.npmjs.org/sequelize-pool/-/sequelize-pool-6.1.0.tgz"
   "version" "6.1.0"
 
-"sequelize-typescript@^2.1.1":
+"sequelize-typescript@^2.0.0", "sequelize-typescript@^2.1.1":
   "integrity" "sha512-4am/5O6dlAvtR/akH2KizcECm4rRAjWr+oc5mo9vFVMez8hrbOhQlDNzk0H6VMOQASCN7yBF+qOnSEN60V6/vA=="
   "resolved" "https://registry.npmjs.org/sequelize-typescript/-/sequelize-typescript-2.1.1.tgz"
   "version" "2.1.1"
   dependencies:
     "glob" "7.2.0"
 
-"sequelize@^6.8.0", "sequelize@>=6.6.5":
+"sequelize@^6.3.5", "sequelize@^6.8.0", "sequelize@>=6.6.5":
   "integrity" "sha512-tekqSMoEuhlXfc9f/WduQr+9CS87bPWw/GKEvd+zMlOlMVFOzNx9PecQV+McjA7OUNUa1YGyPEt+Fe8baXST5A=="
   "resolved" "https://registry.npmjs.org/sequelize/-/sequelize-6.8.0.tgz"
   "version" "6.8.0"
