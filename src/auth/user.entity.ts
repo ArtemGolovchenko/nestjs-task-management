@@ -1,6 +1,5 @@
-import { Table, Column, Model, HasMany } from 'sequelize-typescript';
+import { Table, Column, Model, Unique } from 'sequelize-typescript';
 import { DataTypes } from "sequelize";
-import { Task } from 'src/tasks/task.entity';
 
 @Table
 export class User extends Model {
@@ -12,15 +11,10 @@ export class User extends Model {
     })
     id: string;
 
+    @Unique({ name: 'unique_username_err', msg:'Username already exists' })
     @Column
-    first_name: string;
+    username: string;
 
     @Column
-    last_name: string;
-
-    @Column
-    email: string;    
-
-    @HasMany(() => Task)
-    tasks: Task[];
+    password: string;
 }
