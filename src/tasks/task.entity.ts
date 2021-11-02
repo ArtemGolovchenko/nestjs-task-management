@@ -1,6 +1,7 @@
 import { Table, Column, Model, ForeignKey, BelongsTo, HasMany } from 'sequelize-typescript';
 import { TaskStatus } from './task-status.enum';
 import { DataTypes } from "sequelize";
+import { User } from 'src/auth/user.entity';
 //import { User } from 'src/users/user.entity';
 
 @Table
@@ -13,16 +14,16 @@ export class Task extends Model {
     })
     id: string;
 
-    // @ForeignKey(() => User)
-    // @Column({
-    //     type: DataTypes.UUID,
-    //     defaultValue: DataTypes.UUIDV4,
-    //     allowNull: false,
-    // })
-    // user_id: string;
+    @ForeignKey(() => User)
+    @Column({
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        allowNull: false,
+    })
+    user_id: string;
 
-    // @BelongsTo(() => User)
-    // user: User;
+    @BelongsTo(() => User)
+    user: User;
 
     @Column
     title: string;
